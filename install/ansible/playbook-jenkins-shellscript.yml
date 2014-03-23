@@ -1,0 +1,15 @@
+---
+- hosts: all
+  user: root
+  tasks:
+
+    - name: user jenkins
+      user: name=jenkins
+            group=jenkins
+
+    - name: download jenkins.war
+      get_url: url=http://mirrors.jenkins-ci.org/war/latest/jenkins.war
+               dest=/home/jenkins/jenkins.war
+
+
+

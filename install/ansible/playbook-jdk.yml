@@ -1,0 +1,8 @@
+---
+- hosts: all
+  user: root
+  tasks:
+    - name: install oracle jdk
+      yum: name=/vagrant/download/jdk-7u45-linux-x64.rpm state=installed
+
+

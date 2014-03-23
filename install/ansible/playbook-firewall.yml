@@ -1,0 +1,8 @@
+---
+- hosts: all
+  user: root
+  tasks:
+
+    - name: disable firewall
+      service: name=iptables state=stopped enabled=no
+
